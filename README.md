@@ -1,6 +1,6 @@
 # RecyclerPagerAdapter
 Recycler PagerAdapter
-### 像ListView一样缓存itemView的PagerAdapter。
+#### 像ListView一样缓存itemView的PagerAdapter。
 
 > 1.PagerAdapter默认不缓存itemView，每次instantiateItem时通常都是创建一个新的view，当ViewPager页数非常多时可能有性能问题。
 
