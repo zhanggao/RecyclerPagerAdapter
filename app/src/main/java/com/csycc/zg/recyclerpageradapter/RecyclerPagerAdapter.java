@@ -56,7 +56,9 @@ public abstract class RecyclerPagerAdapter extends PagerAdapter {
     private void refreshItemViews() {
         Set<Integer> positionSet = addItemViewsMap.keySet();
         for (int position : positionSet) {
-            binderItemView(addItemViewsMap.get(position), position);
+            if (position < getCount()) {
+                binderItemView(addItemViewsMap.get(position), position);
+            }
         }
     }
 }
