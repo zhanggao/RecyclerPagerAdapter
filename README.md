@@ -9,3 +9,12 @@ Recycler PagerAdapter
 在destroyItem时，将itemView添加到缓存池中。
 
 > 3.当你的ViewPager的item页数比较多并且每页都是一样的布局时才应该用RecyclerPagerAdapter，否则只需要按通常的写法。
+
+    需要实现创建itemView和绑定itemView数据接口。
+    @Override
+    View createItemView(ViewGroup container) {
+    }
+
+    @Override
+    void binderItemView(View itemView, int position) {
+    }
