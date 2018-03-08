@@ -26,7 +26,7 @@ public abstract class RecyclerPagerAdapter extends PagerAdapter {
 
     public Object instantiateItem(ViewGroup container, int position) {
         View itemView;
-        if (recycleItemViewsList.size() >= 2) {
+        if (recycleItemViewsList.size() <= 2) {
             itemView = createItemView(container);
         } else {
             itemView = recycleItemViewsList.removeFirst();
